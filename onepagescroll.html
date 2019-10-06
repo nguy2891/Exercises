@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>One Page Scroll</title>
+
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+
+</head>
+
+<style>
+
+    html {scroll-behavior: smooth}
+
+    *{margin: 0;
+    box-sizing: border-box;} /*select everything*/
+    body {background-color: slategrey}
+
+    .wrapper{width: 1180px;
+    height: 4500px;
+    background-color: pink;
+    position: relative;
+    margin: auto;
+        color: honeydew;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    nav{width: 1160px;
+        height: 120px;
+        background-color: chocolate;
+        margin: auto;}
+
+    #section-01, #section-03, #section-05 {width: 1160px;
+        height: 800px;
+        background-color: paleturquoise;
+    margin: auto}
+
+    #section-02, #section-04 {width: 1160px;
+        height: 800px;
+        background-color: gold;
+        margin: auto}
+
+    p#s1, p#s2, p#s3, p#s4, p#s5 {display: inline;
+    font-size: 24px;
+    font-family: "Avenir Next Condensed",Arial,sans-serif;
+    font-weight: bold;
+    padding:  25px}
+
+    a:link {text-decoration: none; /* no underline on link*/
+    color: gold}
+
+    a:visited {text-decoration: none;
+        color: steelblue}
+
+    a:hover {text-decoration: none;
+        color: green}
+
+    a:active {text-decoration: none;
+        color: darksalmon}
+
+    a:hover {cursor: pointer}
+
+
+
+</style>
+
+<body>
+
+<div class="wrapper">
+
+ <nav>
+
+     <a href="#section-01"><p id="s1">Section One </p></a>
+     <a href="#section-02"><p id="s2">Section Two</p></a>
+     <a href="#section-03"><p id="s3">Section Three</p></a>
+     <a href="#section-04"><p id="s4">Section Four</p></a>
+     <a href="#section-05"><p id="s5">Section Five</p></a>
+
+ </nav>
+
+    <section><p id="section-01">SECTION ONE </p></section>
+    <section><p id="section-02">SECTION TWO </p></section>
+    <section><p id="section-03">SECTION THREE </p></section>
+    <section><p id="section-04">SECTION FOUR </p></section>
+    <section><p id="section-05">SECTION FIVE </p></section>
+
+<a href="#top"><p class="scroll">SCROLL TO TOP</p></a>
+
+</div> <!--END OF WRAPPER-->
+
+<!--<script>-->
+<!--    $(document).ready(function(){-->
+<!--// Add smooth scrolling to all links-->
+<!--        $("a").on('click', function(event) {-->
+
+<!--// Make sure this.hash has a value before overriding default behavior-->
+<!--            if (this.hash !== "") {-->
+<!--// Prevent default anchor click behavior-->
+<!--                event.preventDefault();-->
+
+<!--// Store hash-->
+<!--                var hash = this.hash;-->
+
+<!--// Using jQuery's animate() method to add smooth page scroll-->
+<!--// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area-->
+<!--                $('html, body').animate({-->
+<!--                    scrollTop: $(hash).offset().top-->
+<!--                }, 800, function(){-->
+
+<!--// Add hash (#) to URL when done scrolling (default click behavior)-->
+<!--                    window.location.hash = hash;-->
+<!--                });-->
+<!--            } // End if-->
+<!--        });-->
+<!--    });-->
+<!--</script>-->
+
+</body>
+</html>
